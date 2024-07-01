@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Internal CSS for styling -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .section {
+            padding: 2em;
+            text-align: center;
+        }
+        .section h2 {
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar .nav-link {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .navbar .nav-link:hover {
+            color: #ff5733;
+        }
+
+        /* Sections */
+        .home {
+            background: #ff5733;
+            color: #fff;
+            padding: 100px 0;
+        }
+        .about, .work, .resume, .contact {
+            background: #fff;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Contact Form */
+        .contact-form .form-group {
+            margin-bottom: 1em;
+        }
+        .contact-form .form-group label {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .contact-form .form-group input,
+        .contact-form .form-group textarea {
+            width: 100%;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form .form-group input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 1em;
+            border-radius: 4px;
+        }
+        .contact-form .form-group input[type="submit"]:hover {
+            background: #ff5733;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>rania ammar </p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>Hello! I'm rania ammar , a student  with experience in english school. I specialize in english literature and have a knack for web develepment .</p>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section work">
+        <h2>My Work</h2>
+        <p>Here are some examples of my recent projects:</p>
+        <ul>
+            <li>Project 1: Description of project  my project is learn web develepment well .</li>
+    
+        </ul>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume">
+        <h2>Resume</h2>
+        <p>Download my resume to learn more about my experience and skills.</p>
+        <a href="resume.pdf" download>Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Send Message">
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
